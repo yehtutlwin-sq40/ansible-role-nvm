@@ -144,7 +144,7 @@
       git:
         dest: "{{ nvm_dir }}"
         repo: 'https://github.com/nvm-sh/nvm.git'
-        version: "{{ nvm_version }}"
+        version: "v{{ nvm_version }}"
       when: "'/git' in mg_cmd.stdout"
 
     - name: Add NVM to nvm_profile
