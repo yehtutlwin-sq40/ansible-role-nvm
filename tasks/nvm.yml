@@ -143,7 +143,7 @@
     - name: Install via git
       git:
         dest: "{{ nvm_dir }}"
-        repo: 'https://github.com/creationix/nvm.git'
+        repo: 'https://github.com/nvm-sh/nvm.git'
         version: "{{ nvm_version }}"
       when: "'/git' in mg_cmd.stdout"
 
